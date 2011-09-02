@@ -16,18 +16,19 @@ $(function() {
 ```
 
 You can also specify some options:
-- onError: callback function triggered when the number is invalid
-- onSuccess: callback function triggerd when the number is valid
-- validClass: css class to add to the texbox when the number is valid
-- invalidClass: css class to add to the textbox when the number is invalid
+
+* onError: callback function triggered when the number is invalid
+* onSuccess: callback function triggerd when the number is valid
+* validClass: css class to add to the texbox when the number is valid
+* invalidClass: css class to add to the textbox when the number is invalid
 
 ```javascript
 $(function() {
   $('#pnr_input').personnr({
     validClass: 'myCustomValidClass',
     invalidClass: 'myCustomInvalidClass',
-    onSuccess: function() { alert("Yay! Pnr is valid!")},
-    onError: function() { alert("Oh noes! Pnr is invalid.")}
+    onSuccess: function() { alert("Yay! Pnr is valid!"); },
+    onError: function() { alert("Oh noes! Pnr is invalid."); }
   });
 });
 ```
