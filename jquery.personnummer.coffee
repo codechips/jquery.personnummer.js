@@ -9,7 +9,7 @@ $.fn.personnr = (options) ->
   , options
 
   isFormatValid = (input) ->
-    if input? then input.match /^\d\d(?:(0[1-9]|1[1-2]))(?:0[1-9]|[1-2]\d|3[0-1])\d{4}$/g else false
+    if input? then input.match /^\d\d(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])\d{4}/g else false
 
   clean = (input) ->
     input = input.replace(/[-\+]/g, '')
